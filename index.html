@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111F">
+  <meta name="description" content="Portafolio personal de Benjamín Corrales Mira, con proyectos de desarrollo web y sus áreas de trabajo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:title" content="Benjamín Corrales Mira · Desarrollo web">
+  <meta property="og:description" content="Conoce mis proyectos de desarrollo web y las áreas que forman parte de mi enfoque de trabajo.">
+  <title>Benjamín Corrales Mira · Desarrollo web</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./portfolio.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">B</span>Benjamín Corrales Mira</a>
+      <nav aria-label="Navegación principal">
+        <a href="#inicio" aria-current="location">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="titulo">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="titulo">Portafolio de <em>desarrollo web</em></h1>
+          <p class="lead">Hola, soy Benjamín Corrales Mira. Aquí comparto proyectos web que he desarrollado, combinando diseño, funcionalidad y una experiencia digital moderna.</p>
+          <p class="muted">Este espacio reúne trabajos reales y seguirá creciendo con nuevos proyectos.</p>
+          <div class="actions">
+            <a class="button primary" href="#proyectos">Ver proyectos</a>
+            <a class="button secondary" href="#sobre-mi">Sobre mí</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="device desktop-device">
+            <div class="device-bar"><span class="preview-dots"></span><span>myrconsultores.cl</span></div>
+            <img src="./images/myr-portada.webp" alt="" width="1120" height="526" fetchpriority="high">
+          </div>
+          <div class="device phone-device">
+            <img src="./images/myr-portada.webp" alt="" width="1120" height="526">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services" aria-labelledby="servicios-titulo">
+      <div class="wrap">
+        <div class="intro">
+          <h2 id="servicios-titulo">Áreas de trabajo</h2>
+          <p class="muted">Tipos de sitios web que he desarrollado o que forman parte de mi enfoque de trabajo.</p>
+        </div>
+        <ul class="service-grid">
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18m-12 0v11"/></svg>
+            <h3>Páginas corporativas</h3>
+            <p>Sitios diseñados para presentar empresas, servicios y canales de contacto de forma clara y profesional.</p>
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 18 18 4m-7 0h7v7M4 8v12h12"/></svg>
+            <h3>Landing pages</h3>
+            <p>Páginas enfocadas en comunicar una propuesta específica y dirigir la atención hacia una acción concreta.</p>
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h16l-1 12H5L4 8Zm5 1V7a3 3 0 0 1 6 0v2"/></svg>
+            <h3>Tiendas online</h3>
+            <p>Espacios pensados para mostrar productos y facilitar procesos de compra digitales.</p>
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 16 6-5 4 4 3-2 5 4M16 9h.01"/></svg>
+            <h3>Portafolios profesionales</h3>
+            <p>Sitios creados para mostrar proyectos, identidad y experiencia de una persona o marca.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects" aria-labelledby="proyectos-titulo">
+      <div class="wrap">
+        <div class="intro">
+          <h2 id="proyectos-titulo">Mis proyectos</h2>
+          <p class="muted">Una selección de trabajos web desarrollados con enfoque en diseño, claridad y funcionalidad.</p>
+        </div>
+        <div id="project-list" class="project-list"></div>
+        <noscript><p><a href="https://myrconsultores.cl/" target="_blank" rel="noopener noreferrer">Visitar M&amp;R Consultores (abre en otra pestaña)</a></p></noscript>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section" aria-labelledby="sobre-titulo">
+      <div class="wrap about">
+        <h2 id="sobre-titulo">Sobre mí</h2>
+        <p class="muted">Soy Benjamín Corrales Mira, apasionado por el desarrollo web y la creación de soluciones digitales. Mi objetivo es ayudar a negocios y profesionales a construir una presencia online moderna, atractiva y funcional.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact" aria-labelledby="contacto-titulo">
+      <div class="wrap contact-panel">
+        <p class="contact-label">Contacto</p>
+        <h2 id="contacto-titulo">Este portafolio seguirá creciendo</h2>
+        <p class="muted">Pronto seguiré sumando nuevos proyectos y también habilitaré mis canales de contacto para compartir más sobre mi trabajo.</p>
+        <div id="contact-links" class="actions" hidden></div>
+        <p id="contact-status" class="contact-status">Canales de contacto disponibles próximamente.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2026 Benjamín Corrales Mira. Todos los derechos reservados.</div>
+  </footer>
+
+  <template id="project-template">
+    <article class="project-card">
+      <div class="project-preview">
+        <div class="preview-bar" aria-hidden="true"><span class="preview-dots"></span>myrconsultores.cl</div>
+        <div class="preview-window">
+          <span class="preview-fallback">myrconsultores.cl</span>
+          <div class="preview-scroll"></div>
+        </div>
+        <div class="preview-footer"><span class="preview-hint" aria-hidden="true" hidden>Desliza para explorar ↓</span></div>
+      </div>
+      <div class="project-details">
+        <p class="category"></p>
+        <h3></h3>
+        <p class="project-description muted"></p>
+        <a class="project-cta" target="_blank" rel="noopener noreferrer">Visitar sitio web
+          <svg class="link-arrow" aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12l8-8M6 4h6v6"/></svg>
+        </a>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
